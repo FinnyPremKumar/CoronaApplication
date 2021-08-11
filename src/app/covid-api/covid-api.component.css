@@ -1,0 +1,25 @@
+div{
+    margin-top: 14px;
+    margin-left: 18px;
+}
+.back{
+    float: left;
+    background-color: white;
+}
+p{
+    margin-left: 20px;
+}
+.borderedit{
+    float: left;
+    width:90px;
+    border-radius: 8px;
+}
+.adjust{
+    margin-left: 10px;
+    height:30px
+}
+.btn{
+    height:26px;
+    height:30px;
+    margin-left: 8px;
+}

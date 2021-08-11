@@ -1,0 +1,13 @@
+<div id="blink">
+  <h2 align="center"><p>An OTP has been sent to your Email and Phone Number! Please Enter correct OTP to Login</p></h2>
+</div>
+<div> 
+  <form #userForm="ngForm">
+    <input #one required pattern=".{4,}" type="number" ngModel onKeyPress="if(this.value.length==4) return false;" #otp1="ngModel" name="otp1" class="form-conrol" placeholder="Enter OTP sent to Email"/>
+    <span *ngIf="otp1.invalid && otp1.touched"></span>
+    <input required length="4" pattern=".{4,}" type="number" ngModel #otp2="ngModel" onKeyPress="if(this.value.length==4) return false;" name="otp2" class="form-control" placeholder="Enter OTP sent to Phone"/>
+    <span *ngIf="otp2.invalid && otp1.touched"></span>
+    <input type="submit" [disabled]="userForm.invalid" value="Verify" class="btn btn-success" (click)="openLogin()"/>
+    <input type="button" value="Cancel" class="btn btn-danger" (click)="openLogin()"/>
+  </form>
+</div>

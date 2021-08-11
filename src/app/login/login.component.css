@@ -1,0 +1,128 @@
+#div{
+  float:left;
+  height:100px;
+  width:100%;
+  margin:0px 30px 0px 0px;
+  background:linear-gradient(90deg,#00c4cc,#7d2ae8);
+  color:black;
+  letter-spacing:10px;  
+}
+#header{
+  font-size:40px;
+  margin-left:20px;
+  margin-top:0px
+}
+#bottomheader{
+  font-size:20px;
+  letter-spacing:30px;
+  margin-left:25px;
+  margin-top:0px;
+  
+}
+#headerDiv{
+  margin-left:8px;
+  box-shadow: 5px 5px 40px maroon;
+  height:100px;
+  width:400px;
+  border:1px solid white;
+  border-radius:20px
+}
+
+#div1{
+background-color:white;
+  float:left;
+  margin:50px 0px 0px 35%;
+  height:400px;
+  width: 350px;
+  border:1px solid green;
+  border-radius:20px;
+  transition:.5s
+}
+#div1:hover
+{
+  box-shadow:0 2px 5px 0 white inset,0 2px 5px 0 grey,
+             0 2px 5px 0 maroon inset,0 2px 5px 0 maroon
+}
+
+#maindiv{
+  margin:10% 0% 0% 6%;
+}
+.form-input{
+ float:left;
+ width:90%;
+ outline:0px;
+ height:29px;
+ border:1px solid black;
+ border-radius:10px;
+  margin:20px 0px 0px 6px;
+  transition:.5s
+}
+#form-heading{
+color:maroon;
+  font-size:38px;
+  margin-left:15%;
+}
+#forgot{
+  float:left;
+  font-size:20px;
+  margin:25px 0px 0px 65px
+}
+.form-input{
+border:1px solid maroon;
+  float:left;
+  width:300px;
+  height:29px;
+  margin:5px 0px 0px 10px;
+}
+.field{
+  border:0px;
+  height:10px
+}
+marquee{
+  font-size:25px;
+  color:white;
+  background-color:maroon;
+  width:100%;
+  float:left
+}
+td{
+  height:2px
+}
+.error{
+  color:red;
+  margin-left:20px
+}
+.form-input:hover{
+  box-shadow:0 2px 5px 0 white inset,0 2px 5px 0 grey,
+             0 2px 5px 0 grey inset,0 2px 5px 0 grey
+}
+#formpass{
+  background-color:#1877f2;
+  font-size:20px;
+  color:white;
+  height:39px
+}
+#signup{
+  font-size:19px;
+  float:left;
+  margin:0px 0px 0px 65px
+}
+h1 {
+  color:light;
+  margin-top:110px;
+  border-top: 2px solid black;
+  border-radius: 5px;
+}
+.createbtn
+{
+  float:left;
+  margin-top:22px;
+  margin-left:10px;
+  width:300px;
+  border:1px solid green;
+  outline:0px;
+}
+.createbtn:hover{
+  box-shadow:0 2px 5px 0 green inset,0 2px 5px 0 green,
+             0 2px 5px 0 grey inset,0 2px 5px 0 grey
+}

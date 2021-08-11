@@ -1,0 +1,20 @@
+<div id="back">
+  <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+  <div id="verify">
+    <table>
+    <tr>
+      
+      <td><input required class="form-control" ngModel minlength="10" #email="ngModel"  name="email" type="email" placeholder="Enter Email/Phone Number"/></td>
+      <td><input [disabled]="email.touched && email.invalid" class="btn btn-success btnwidth" type="button" value="submit" name="sendOTP"/></td>  
+    
+    </tr>
+      <span *ngIf="email.invalid && email.touched">*This field is required</span>
+      <tr>
+        <td><input class="form-control" type="number" ngModel #otp="ngModel" name="otp" required placeholder="Verify OTP"/></td>
+      </tr>
+      <span *ngIf="otp.invalid && otp.touched">*This field is required</span>
+    </table>
+    <input [disabled]="userForm.invalid" class="btn btn-success form-control verify" type="submit" value="Verify"/>
+    </div>
+  </form>
+</div>

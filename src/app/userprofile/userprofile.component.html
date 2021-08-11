@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="col-sm-6 col-md-4 marginAdjustment">
+      <div class="div-box">
+        <!--<div class="User-img">
+          <img [src]="imgUrl">
+        </div>-->
+        <h3 class="User-name">{{userDetails.name}}</h3>
+       <!--  <h4 class="designation">Web Developer</h4>
+        <div class="contact-btn">
+          <button type="button" class="btn btn-success">Follow</button>
+          <button type="button" class="btn btn-secondary">Message</button>
+        </div> -->
+        <div class="profile-details">
+          <ul>
+            <li><a href="homepage" ><i class="fas fa-home" ></i>Home</a></li>
+            <li><a><i class="fas fa-phone"></i>{{userDetails.phone}}</a></li>
+            <li><a><i class="fas fa-envelope"></i>{{userDetails.email}}</a></li>
+            <li><a href="#"><i class="fas fa-flag"></i> Help</a></li>
+          </ul>
+        </div>
+      </div>
+  </div>
+</div>

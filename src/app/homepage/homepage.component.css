@@ -1,0 +1,31 @@
+.myChart {
+  margin: 10%;
+  margin-bottom: 20%;
+  margin-top: 3%;
+}
+/* .downloadButton {
+  margin: 2%;
+} */
+.customMargin {
+  margin-left: 10%;
+}
+.LogoutMargin {
+  margin-left: 10%;
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+#pdfTable{
+  background-color: white;
+  margin-top: 10px;
+}
+.state{
+  margin-left: 10px;
+}
+#pdfTable_wrapper {
+  margin-top: 3%;
+}
+.myChart .customTable {
+  margin-top: 3%;
+}

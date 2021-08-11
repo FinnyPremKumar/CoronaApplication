@@ -1,0 +1,121 @@
+#header{
+  font-size:40px;
+    letter-spacing:9px;
+  margin-left:20px;
+  margin-top:0px
+}
+#bottomheader{
+  font-size:20px;
+  letter-spacing:30px;
+  margin-left:25px;
+  margin-top:0px;
+  
+}
+#headerDiv{
+  margin-left:8px;
+  box-shadow: 5px 5px 40px maroon;
+  height:100px;
+  width:400px;
+  border:1px solid white;
+  border-radius:20px
+}
+marquee{
+  font-size:25px;
+  color:white;
+  background-color:maroon;
+  width:100%;
+  float:left
+}
+#div{
+  float:left;
+  height:100px;
+  width:100%;
+  margin:0px 30px 0px 0px;
+  background:linear-gradient(90deg,#00c4cc,#7d2ae8);
+  color:black;
+}
+a{
+  color:white;
+  font-size:15px;
+  letter-spacing:2px
+}
+#img{
+  margin-left:860px;
+  margin-right:20px
+}
+#login{
+  float:right;
+  margin-top:0px;
+  margin-right:10px;
+  border-radius:10px
+}
+
+#bodyleft{
+  float:left;
+  height:470px;
+  width:400px;
+  background:linear-gradient(90deg,#e52d27,#b31217);
+  border-radius:25px;
+  margin-left:20px;
+  margin-top:27px
+}
+.bodytext{
+  color:white;
+  font-family: "Times New Roman", Times, serif;
+  font-size:22px;
+  letter-spacing:2px;
+  margin-top:10px;
+  margin-left:45px
+}
+#bodycorona{
+  letter-spacing:8px;
+  margin-left:80px;
+  font-family: "Times New Roman", Times, serif;
+  font-size:45px;
+  background: -webkit-linear-gradient(#EDE574, #E1F5C4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#innertext{
+  border:1px solid white;
+  border-radius:20px;
+  width:370px;
+  margin-left:15px
+}
+#bodyright{
+  height:470px;
+  width:800px;
+  background:linear-gradient(90deg,#536976,#292E49);
+  border-radius:25px;
+  float:right;
+  margin-top:27px;
+  margin-right:0px
+}
+.rightbodytext{
+  color:white;
+  font-family: "Times New Roman", Times, serif;
+  font-size:52px;
+  letter-spacing:3px;
+  margin-top:10px;
+  margin-left:33px
+}
+.buttonlogin{
+  height:90px;
+  width:560px;
+  border-radius:20px;
+  margin-left:80px;
+  margin-top:30px;
+  margin-bottom:30px;
+  font-size:50px;
+}
+.rightbodytext1{
+  margin-top:10px;
+  margin-left:20px;
+  font-size:20px;
+  color:white;
+  font-family: "Times New Roman", Times, serif;
+}
+#rightinnerdiv{
+  text-align:center;
+  margin:70px 4px 0px 0px;
+}

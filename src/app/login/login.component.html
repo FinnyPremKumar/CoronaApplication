@@ -1,0 +1,104 @@
+ <!--><div id="imagediv" >
+       <a href="home"><img src="hi.jpg" target="blank" alt="Home" height="300" width="200"/></a>
+  </div>
+  </!-->
+  <div id="div">
+       <div id="headerDiv"> 
+        <label id="header">Corona Virus</label><label id="bottomheader">Dashboard</label>
+   </div> 
+  </div>
+  <marquee class="d-flex justify-content-start"  scrollamount="15">This website shows you the realtime covid case count! Please sign in to access the covid data from our website. Thank you for visiting... Stay positive! Test negative!! </marquee>
+
+  <div id="div1" >
+    <div id="maindiv">
+        <div  id="form-heading">
+            <label name="covid-login" >Covid Login</label>
+        </div>
+      <br/>
+      <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+
+        <input #email="ngModel"
+                ngModel
+                class="form-input form-control"
+                required
+                type="email"
+                email
+                placeholder="Enter Email"
+                name="username"/><br/>
+        <span *ngIf="email.invalid && email.touched"
+              class="error">
+              *This field is required
+        </span>
+        <input disabled class="field"
+                type="text"/>
+        <input class="form-input form-control"
+               ngModel
+               #pass="ngModel"
+               minlength="3"
+               required
+               type="password"
+               placeholder="Password"
+               name="password"/><br/>
+        <span *ngIf="pass.invalid && pass.touched"
+              class="error">
+              *This field is Required
+        </span>
+        <input disabled class="field"/>
+        <input [disabled]="userForm.invalid"
+               class="form-input btn btn-primary"
+               id ="formpass"
+               type="submit"
+               value="login"/>
+        <div>
+        <label id="forgot">
+              <a data-toggle="modal"
+                 href="#myModal1">
+                 forgotten password?
+              </a>
+        </label>
+        <input type="button"
+               class="btn btn-success btn-lg createbtn"
+               data-toggle="modal"
+               data-target="#myModal"
+               value="Create an account"/>
+        </div>
+        </form>
+    </div>
+    <h1 ></h1>
+    </div>
+    <!-- SignUp modal -->
+    <div class="modal fade" data-backdrop="false" tabindex="-1" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content" >
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sign Up</h4>
+        </div>
+        <div class="modal-body">
+          <app-signup></app-signup>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- forgot modal -->
+   <div class="modal fade" data-backdrop="false" tabindex="-1" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">verification</h4>
+        </div>
+        <div class="modal-body">
+          <app-forgot></app-forgot>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>

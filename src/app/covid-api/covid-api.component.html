@@ -1,0 +1,25 @@
+<div>
+    <select class="borderedit" #myval (change)="getCountry(myval.value)" name="country"  id="" >
+        <option *ngFor="let code of countries">{{code.Slug}}</option>
+    </select>
+    <form #userForm="ngForm">
+    <label class="adjust">Start date:</label>
+    <input required date class="adjust" ngModel #date1="ngModel" name="date1" type="date"/>
+    <label class="adjust" for="">End Date:</label>
+    <input required class="adjust" ngModel #date2="ngModel" date name="date2" type="date"/>
+    <input type="submit" [disabled]="userForm.invalid" class="btn btn-primary" value="Get Data" (click)="onSubmit()"/>
+    
+    
+   <!-- <input class="adjust" placeholder="Search for a Country" target="blank" type={{type}} name="name" id="name" [(ngModel)]="name"/>
+    <input type={{type1}}  name="submit" class="submit" (click)="search()" value="Search"/>-->
+</form>
+</div>
+<p>Selected Country: <b>{{country}}</b></p>
+<div class="chart-container back" ng-show="graph.visible">  
+    <canvas baseChart id="chart" height="640px" width="1500px%"
+    [datasets]="barChartData"
+      [labels]="barChartLabels"
+      [options]="barChartOptions"
+      [legend]="barChartLegend"
+      [chartType]="barChartType"></canvas>
+</div>

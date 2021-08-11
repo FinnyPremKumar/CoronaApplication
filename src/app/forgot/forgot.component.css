@@ -1,0 +1,41 @@
+input{
+  height:30px;
+  width:300px;
+  margin-top:10px;
+  border-radius:10px;
+  border:1px solid green;
+  outline:0px;
+}
+input:hover
+{
+  box-shadow:0 2px 5px 0 white inset,0 2px 5px 0 green,
+            0 2px 5px 0 white inset,0 2px 5px 0 green
+}
+.btnwidth{
+  margin-left: 10px;
+  width:70px;
+  border: 0px solid black;
+  outline: 0px;
+}
+#back{
+  background-color:white;
+  border-radius:20px;
+  float:left;
+  margin-top:50px;
+  margin-bottom:20px;
+  margin-left:6%;
+  height:200px;
+  width:500px;
+  transition:.6s
+}
+#verify{
+  margin-left:103px;
+  margin-top:10%
+}
+span{
+  color:red
+}
+.verify{
+  color:black;
+ 
+}

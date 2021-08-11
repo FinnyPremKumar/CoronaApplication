@@ -1,0 +1,35 @@
+<div>
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)" >
+    <table>
+      <tr>
+        <td><input class="form-control" name="fullName" required ngModel #fname="ngModel" type="text" minlength="3" placeholder="Full Name"></td>
+      </tr>
+      <tr><span *ngIf="fname.invalid && fname.touched">*Check your name again</span></tr>
+      <tr>
+        <td><input class="form-control" name="email" email ngModel #email="ngModel" required type="email" placeholder="E-mail"></td>
+      </tr>
+        <tr><span *ngIf="email.invalid && email.touched">*Check your mail again</span></tr>
+
+      <tr>
+        <td><input class="form-control" name="phoneNumber" required number ngModel #num="ngModel" type="number" pattern=".{10,}" onKeyPress="if(this.value.length==10) return false;" placeholder="Phone Number"></td>
+      </tr>
+        <tr><span *ngIf="num.invalid && num.touched && num.value.length<=10">*Check your number again</span></tr>
+
+      <tr>
+        <td><input class="form-control" minlength="3" name="password" pattern=".{8,}" required type="password" ngModel #password="ngModel" placeholder="password"></td>
+      </tr>
+        <tr><span *ngIf="password.invalid && password.touched">*Password length should be 8 characters or more</span></tr>
+
+      <tr>
+        <td><input class="form-control" ngModel #confirmPassword="ngModel" name="confirmPassword" pattern=".{8,}" minlength="3" required type="password" placeholder="confirm password"></td>
+      </tr>
+      <tr><span *ngIf="password.value!=confirmPassword.value">*Password and confirm password are not same</span></tr>
+
+    </table>
+    
+    <div id="input-form">
+      <input [disabled]="userForm.invalid" class="btn btn-success enter" type="submit" value="Sign Up"/>
+      <input class="btn btn-secondary enter" type="reset" value="Reset"/>
+    </div>
+    </form>
+</div>
